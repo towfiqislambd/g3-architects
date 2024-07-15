@@ -1,0 +1,391 @@
+/* ========== Common CSS ============ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ========== Reuseable Components ============ */
+.dark-1 {
+    color: rgb(19, 19, 19)
+}
+
+.dark-3 {
+    color: rgb(114, 114, 114)
+}
+
+.primary-color {
+    color: rgb(255, 144, 14)
+}
+
+/* ========== Header Part ============ */
+header {
+    /* height: 95vh;
+    overflow: hidden; */
+    background: rgba(255, 144, 14, 0.1);
+    padding-bottom: 30px;
+}
+
+header img {
+    width: 100%;
+    height: 450px;
+    padding: 0 5px;
+}
+
+header nav {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 45px
+}
+
+nav h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav li a {
+    color: rgb(114, 114, 114);
+    font-weight: 500;
+}
+
+header .header-desc {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header-desc h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 3.2rem;
+}
+
+.header-desc p {
+    margin-bottom: 25px;
+    opacity: 0.7;
+    line-height: 1.4rem;
+}
+
+.header-desc button,
+#feathers button {
+    border: none;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: rgb(255, 144, 14);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ========== Feathers Section ============ */
+#feathers {
+    margin: 80px 0;
+}
+
+.feathers-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+.feathers-wrapper>div {
+    flex: 1;
+}
+
+.feathers-wrapper .feather-img img {
+    width: 100%;
+}
+
+.feathers-wrapper .feather-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.feather-desc h3,
+#experience h3,
+#sponspor h3,
+#fact h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.feather-desc p,
+#experience p,
+#fact p,
+#sponspor p {
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+}
+
+.feather-desc h3 .dark-3 {
+    font-weight: 500;
+}
+
+/* ========== Experience Section ============ */
+
+#experience {
+    margin-bottom: 80px;
+}
+
+.experience-wrapper {
+    display: flex;
+    gap: 80px;
+    position: relative;
+}
+
+.experience-wrapper>div {
+    flex: 1;
+}
+
+.experience-img {
+    text-align: right;
+}
+
+#experience img {
+    width: 90%;
+}
+
+.experience-img button {
+    border: none;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    background: rgb(255, 144, 14);
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    bottom: -3%;
+    left: 50%
+}
+
+.experience-img button span:first-child {
+    font-size: 40px;
+}
+
+.experience-desc h3 {
+    border-left: 4px solid rgb(255, 144, 14);
+    border-radius: 2px;
+    padding-left: 15px;
+}
+
+.experience-desc>div {
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.experience-desc div h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience-desc div p {
+    font-size: 15px;
+}
+
+.experience-content {
+    display: none;
+}
+
+/* ========== Fact Section ============ */
+
+#fact {
+    margin: 120px 0;
+}
+
+.fact-wrapper {
+    display: flex;
+    gap: 70px;
+    padding: 0 30px;
+}
+
+.fact-wrapper .card {
+    flex: 1
+}
+
+.fact-wrapper .card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+}
+
+#fact>p {
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+/* ========== Sponspor Section ============ */
+
+#sponspor {
+    margin: 80px 0;
+    text-align: center;
+}
+
+#sponspor p {
+    width: 550px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+#sponspor .sponspor-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sponspor .sponspor-wrapper img {
+    filter: grayscale(100%);
+}
+
+/* ========== Footer Part ============ */
+
+footer {
+    background: rgb(245, 230, 212);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    opacity: 0.8;
+    line-height: 1.3rem;
+}
+
+/* Responsive CSS Code */
+@media screen and (max-width:1140px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    #experience img {
+        width: 100%;
+    }
+
+    .experience-img button {
+        bottom: 0;
+        left: 47%
+    }
+}
+
+@media screen and (max-width:992px) {
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .experience-img button {
+        display: none !important;
+    }
+
+    .experience-wrapper {
+        align-items: center;
+        gap: 30px
+    }
+
+    .experience-content {
+        display: block;
+        text-align: center;
+    }
+
+    .experience-wrapper .experience-desc h3,
+    .experience-wrapper .experience-desc p.dark-3-hidden {
+        display: none;
+    }
+
+    .fact-wrapper {
+        gap: 30px;
+        padding: 0;
+    }
+
+    #sponspor .sponspor-wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .header-desc {
+        max-width: 100%;
+    }
+
+    .header-desc h1 {
+        font-size: 35px;
+        line-height: 2.5rem;
+    }
+
+    nav ul {
+        gap: 30px
+    }
+
+    nav h2 {
+        font-size: 25px;
+    }
+
+    .feathers-wrapper {
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .experience-wrapper {
+        flex-direction: column;
+    }
+
+    .experience-content {
+        display: none;
+    }
+
+    .experience-wrapper .experience-desc h3,
+    .experience-wrapper .experience-desc p.dark-3-hidden {
+        display: block;
+    }
+
+    .fact-wrapper {
+        flex-wrap: wrap;
+    }
+
+    #fact>p,
+    #sponspor p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header nav {
+        flex-direction: column;
+        gap: 15px
+    }
+
+    nav ul {
+        gap: 15px
+    }
+
+    .header-desc h1 {
+        font-size: 27px;
+        line-height: 2rem;
+    }
+
+    .feathers-wrapper .feather-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
